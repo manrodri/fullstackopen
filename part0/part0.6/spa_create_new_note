@@ -1,0 +1,22 @@
+title User creates new note spa 
+note over browser:
+POST request:
+JSON-data containing (Content-type: application/json)
+both the content of the note (content) 
+and the timestamp (date)
+end note
+
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+
+
+note over browser:
+Uses the JavaScript code it fetched from the server (spa.js)
+EventHandler for form.onsubmit creates a new note 
+re-render the page (redrawNotes function)
+and sends new note to the server (sendToServer function)
+
+end note
+
+server-->browser: Response 201
